@@ -1,0 +1,152 @@
+﻿@using Indigo99.DomainObjects
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="Violate Responsive Admin Template">
+    <meta name="keywords" content="Super Admin, Admin, Template, Bootstrap">
+    <title>Ariya Admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/animate.min.css" rel="stylesheet">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/css/form.css" rel="stylesheet">
+    <link href="~/css/calendar.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/icons.css" rel="stylesheet">
+    <link href="~/css/generics.css" rel="stylesheet">
+</head>
+@{
+
+    var customer = Session["currentUser"] as CustomPrincipal;
+
+
+}
+<body id="skin-blur-violate">
+    <header id="header" class="media">
+        <a href="" id="menu-toggle"></a>
+        <a class="logo pull-left" href="/Home">ARIYA ADMIN 1.0</a>
+
+        <div class="media-body">
+            <div class="media" id="top-menu">
+                
+                <div id="time" class="pull-right">
+                    <span id="hours"></span>
+                    :
+                    <span id="min"></span>
+                    :
+                    <span id="sec"></span>
+                </div>
+
+                <div class="media-body">
+                    <input type="text" class="main-search">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <section id="main" class="p-relative" role="main">
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <!-- Sidbar Widgets -->
+            <div class="side-widgets overflow">
+                <!-- Profile Menu -->
+                <div class="text-center s-widget m-b-25 dropdown" id="profile-menu">
+                    <a href="" data-toggle="dropdown">
+                        <img class="profile-pic animated" src="img/profile-pic.jpg" alt="">
+                    </a>
+                    <ul class="dropdown-menu profile-menu">                     
+                        <li><a href="/LogIn/SignOut">Sign Out</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
+                    </ul>
+                    @if (customer != null)
+                    {
+                        <h4 class="m-0">@(customer.Customer.FirstName + " " + @customer.Customer.LastName)</h4>                   
+                    }   
+                </div>
+                <!-- Calendar -->
+                <div class="s-widget m-b-25">
+                    <div id="sidebar-calendar"></div>
+                </div>
+            </div>
+            <!-- Side Menu -->
+            <ul class="list-unstyled side-menu">
+                <li class="active">
+                    <a class="sa-side-home" href="@Url.Action("Index", "Home")">
+                        <span class="menu-item">Dashboard</span>
+                    </a>
+                </li>
+                <li>                    
+                    <a class="sa-side-photos" href="@Url.Action("Index", "Movie")">
+                        <span class="menu-item">Movies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sa-side-ui" href="@Url.Action("Index", "Song")">
+                        <span class="menu-item">Songs</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sa-side-table" href="@Url.Action("Index", "Book")">
+                        <span class="menu-item">Books</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="sa-side-form" href="#">
+                        <span class="menu-item">Manage Content</span>
+                    </a>
+                    <ul class="list-unstyled menu-item">
+                        <li><a href="@Url.Action("Index", "Top10")">Top 10</a></li>
+                        <li><a href="@Url.Action("Index", "Trending")">Trending</a></li>
+                        <li><a href="@Url.Action("Index", "Featured")">Featured</a></li>
+                        <li><a href="@Url.Action("Index", "News")">News</a></li>
+                        <li><a href="@Url.Action("Index", "Events")">Events</a></li>
+                        <li><a href="@Url.Action("Index", "Lounge")">Lounge</a></li>
+                        <li><a href="@Url.Action("Index", "Ads")">Ads</a></li>
+                        <li><a href="@Url.Action("Index", "Animation")">Animation</a></li>
+                    </ul>
+                </li>                
+            </ul>
+        </aside>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+    </section>
+
+    <!-- Javascript Libraries -->
+    <!-- jQuery -->
+    <script src="~/js/jquery.min.js"></script> <!-- jQuery Library -->
+    <script src="~/js/jquery-ui.min.js"></script> <!-- jQuery UI -->
+    <script src="~/js/jquery.easing.1.3.js"></script> <!-- jQuery Easing - Requirred for Lightbox + Pie Charts-->
+    <!-- Bootstrap -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Charts -->
+    <script src="~/js/charts/jquery.flot.js"></script> <!-- Flot Main -->
+    <script src="~/js/charts/jquery.flot.time.js"></script> <!-- Flot sub -->
+    <script src="~/js/charts/jquery.flot.animator.min.js"></script> <!-- Flot sub -->
+    <script src="~/js/charts/jquery.flot.resize.min.js"></script> <!-- Flot sub - for repaint when resizing the screen -->
+    <script src="~/js/sparkline.min.js"></script> <!-- Sparkline - Tiny charts -->
+    <script src="~/js/easypiechart.js"></script> <!-- EasyPieChart - Animated Pie Charts -->
+    <script src="~/js/charts.js"></script> <!-- All the above chart related functions -->
+    <!-- Map -->
+    <script src="~/js/maps/jvectormap.min.js"></script> <!-- jVectorMap main library -->
+    <script src="~/js/maps/usa.js"></script> <!-- USA Map for jVectorMap -->
+    <!--  Form Related -->
+    <script src="~/js/icheck.js"></script> <!-- Custom Checkbox + Radio -->
+    <!-- UX -->
+    <script src="~/js/scroll.min.js"></script> <!-- Custom Scrollbar -->
+    <!-- Other -->
+    <script src="~/js/calendar.min.js"></script> <!-- Calendar -->
+    <script src="~/js/feeds.min.js"></script> <!-- News Feeds -->
+    <!-- All JS functions -->
+    <script src="~/js/functions.js"></script>
+</body>
+</html>

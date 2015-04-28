@@ -1,0 +1,63 @@
+﻿@using Indigo99.DomainObjects
+@model Movie
+
+<style type="text/css">
+    .labelX{
+        padding-left: 5px;
+    }
+</style>
+@{
+    
+    var sectionddl = new List<SelectListItem>{ new SelectListItem{ Text = Sections.UnClassified.ToString() , Value = ((int)Sections.UnClassified).ToString(), Selected = ViewBag.Section == Sections.UnClassified },
+                                               new SelectListItem{ Text = Sections.Top10.ToString() , Value = ((int)Sections.Top10).ToString(), Selected = ViewBag.Section == Sections.Top10  },
+                                               new SelectListItem{ Text = Sections.Featured.ToString()  , Value = ((int)Sections.Featured).ToString(), Selected = ViewBag.Section == Sections.Featured },
+                                               new SelectListItem { Text = Sections.New.ToString() , Value = ((int)Sections.Featured).ToString(), Selected = ViewBag.Section == Sections.Featured  },
+                                               new SelectListItem { Text = Sections.Trending.ToString() , Value = ((int)Sections.Trending).ToString(), Selected = ViewBag.Section == Sections.Trending  }  };
+
+    var genresddl = new List<SelectListItem>{ new SelectListItem{ Text = Genres.Romance.ToString() , Value = ((int)Genres.Romance).ToString(), Selected = ViewBag.Genre == Genres.Romance},
+                                           new SelectListItem{ Text = Genres.Comedy.ToString() , Value = ((int)Genres.Comedy).ToString(), Selected = ViewBag.Genre == Genres.Comedy },
+                                           new SelectListItem{ Text = Genres.Horror.ToString() , Value = ((int)Genres.Horror).ToString() , Selected = ViewBag.Genre == Genres.Horror },
+                                           new SelectListItem{ Text = Genres.Documentary.ToString() , Value = ((int)Genres.Documentary).ToString() , Selected = ViewBag.Genre == Genres.Documentary },
+                                           new SelectListItem{ Text = Genres.History.ToString() , Value = ((int)Genres.History).ToString(), Selected = ViewBag.Genre == Genres.History  },
+                                           new SelectListItem{ Text = Genres.Crime.ToString(), Value = ((int)Genres.Crime).ToString() , Selected = ViewBag.Genre == Genres.Crime } ,
+                                           new SelectListItem{ Text = Genres.Thriller.ToString() , Value = ((int)Genres.Thriller).ToString() , Selected = ViewBag.Genre == Genres.Thriller }  };
+}
+<table style="width: 90%">
+    <tr>
+        <td><i class ="fa fa-film fa-2x"></i><span class="labelX">Movie Name</span></td>
+        <td>@Html.TextAreaFor(Model => Model.Name, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-file fa-2x"></i><span class="labelX">Smaller Thumb Nail Image Path</span></td>
+        <td>@Html.TextAreaFor(Model => Model.ThumbNailImagePath, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-file fa-2x"></i><span class="labelX">Big ThumbNail Image Path</span></td>
+        <td>@Html.TextAreaFor(Model => Model.BiggerThumbNailImagePath, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-calendar fa-2x"></i><span class="labelX">Release Date</span></td>
+        <td>@Html.TextAreaFor(Model => Model.ReleaseDate, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-file fa-2x"></i><span class="labelX">Image Full-Size Path</span></td>
+        <td>@Html.TextAreaFor(Model => Model.FullSizeImagePath, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-fighter-jet fa-2x"></i><span class="labelX">Web Streaming URL</span></td>
+        <td>@Html.TextAreaFor(Model => Model.StreamingUrl, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-apple fa-2x"></i><span class="labelX">Section</span></td>
+        <td>@Html.DropDownListFor(Model => Model.SectionId, sectionddl, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-beer fa-2x"></i><span class="labelX">Genre</span></td>
+        <td>@Html.DropDownListFor(Model => Model.Genre, genresddl, new { @class = "form-control input-sm" })</td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-male fa-2x"></i><span class="labelX">Cover Artist Display Name</span></td>
+        <td>@Html.TextAreaFor(Model => Model.CoverArtistDisplayName, new { @class = "form-control input-sm" })</td>
+    </tr>
+</table>
+

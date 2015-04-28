@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo99.Data", "Indigo.Data\Indigo99.Data.csproj", "{18C40956-706D-497A-AFA9-2428097C9B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo99.Web", "Indigo99.Web\Indigo99.Web.csproj", "{C7D8413D-E659-4CD5-B13E-9AF75941C3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo99.BusinessServices", "Indigo99.BusinessServices\Indigo99.BusinessServices.csproj", "{F31E960D-9F12-4683-A8F7-57C9A1B608A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo99.Data.UnitTests", "Indigo99.Data.UnitTests\Indigo99.Data.UnitTests.csproj", "{3C3D6578-2AB4-4CE9-83F1-0A1F865E6C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo99.DomainObjects", "Indigo99.DomainObjects\Indigo99.DomainObjects.csproj", "{57735DD2-1285-4ABF-A713-C44200D784FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo99.Web.Admin", "Indigo99.Web.Admin\Indigo99.Web.Admin.csproj", "{C64FD897-6570-4A73-A485-8B10487A2535}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18C40956-706D-497A-AFA9-2428097C9B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C40956-706D-497A-AFA9-2428097C9B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C40956-706D-497A-AFA9-2428097C9B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C40956-706D-497A-AFA9-2428097C9B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D8413D-E659-4CD5-B13E-9AF75941C3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D8413D-E659-4CD5-B13E-9AF75941C3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D8413D-E659-4CD5-B13E-9AF75941C3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D8413D-E659-4CD5-B13E-9AF75941C3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31E960D-9F12-4683-A8F7-57C9A1B608A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31E960D-9F12-4683-A8F7-57C9A1B608A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31E960D-9F12-4683-A8F7-57C9A1B608A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31E960D-9F12-4683-A8F7-57C9A1B608A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3D6578-2AB4-4CE9-83F1-0A1F865E6C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3D6578-2AB4-4CE9-83F1-0A1F865E6C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3D6578-2AB4-4CE9-83F1-0A1F865E6C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3D6578-2AB4-4CE9-83F1-0A1F865E6C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57735DD2-1285-4ABF-A713-C44200D784FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57735DD2-1285-4ABF-A713-C44200D784FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57735DD2-1285-4ABF-A713-C44200D784FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57735DD2-1285-4ABF-A713-C44200D784FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64FD897-6570-4A73-A485-8B10487A2535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64FD897-6570-4A73-A485-8B10487A2535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64FD897-6570-4A73-A485-8B10487A2535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64FD897-6570-4A73-A485-8B10487A2535}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

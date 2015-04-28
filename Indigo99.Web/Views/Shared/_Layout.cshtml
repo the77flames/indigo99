@@ -1,0 +1,198 @@
+﻿@using Indigo99.DomainObjects
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ariya | relax | enjoy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-522955913726e62c" async="async"></script>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.gallery.js"></script>
+    <!-- roundabout jQuery & CSS -->
+    <script src="js/jquery.roundabout.min.js"></script>
+    <link href="css/roundabout.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dg-container').gallery({
+                autoplay: true
+            });
+
+            $('.home-listing').bxSlider({
+                minSlides: 4,
+                maxSlides: 4,
+                controls: false,
+                moveSlides: 4,
+                slideWidth: 192,
+                slideMargin: 10
+            });
+
+            $('.sidebar-slider').bxSlider({
+            });
+
+
+
+        });
+
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+</head>
+@{
+
+    var customer = Session["currentUser"] as CustomPrincipal;
+
+
+}
+<body>
+    <!--header-wrap-->
+    <section id="header-wrapp">
+        <!--head-->
+        <section id="head">
+            <div class="logo"></div>
+            <div class="product-search">
+                <div class="members-prod">
+                    <input name="Members, Products" type="text" value="Members, Products" class="members-field" />
+                </div>
+                <div class="login-cart">                   
+                    <ul>
+                        @if (customer == null)
+                        {
+                            <li> <a href="#"></a> </li>
+                            <li> <a href="LogIn">LOG IN</a> </li>
+                            <li> <a href="Registration">SIGN UP</a> </li>
+                        }
+                        else
+                        {
+                            <li> <a href="#"></a> </li>
+                            <li> Welcome, @customer.Customer.FirstName ! </li>
+                            <li> <a href="LogIn\SignOut">LOG OUT</a> </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---headEND-->
+        <div class="clr"></div>
+        <!--nav-->
+        <div id="nav">
+            <div class="navbar">
+                <ul class="left">
+                    <li>
+                        <a href="#">ariya PLAY</a>
+                    </li>
+                    <li>
+                        <a href="#">ariya ZONE</a>
+                    </li>
+                    <li>
+                        <a href="#">ariya BUZZ</a>
+                    </li>
+                </ul>
+
+                <div class="n-logo">
+                    <a href="/Home"><img src="images/nlogo.png" alt=nlogo width="90px" height="90px" /></a>
+                </div>
+
+                <ul class="right">
+                    <li>
+                        <a href="#">ariya HALL</a>
+                    </li>
+                    <li>
+                        <a href="#">ariya XTRA !</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--navEND-->
+        <div class="clr"></div>
+
+        <!--content-->
+        @RenderBody()
+        <!--contentEND-->
+
+        <div class="clr"></div>
+
+        <!--footer-->
+        <footer>
+            <section id="footer-inn">
+                <div class="fsocialmedia-icons">
+                    <div class="flogo"><a href="index.html"><img src="images/flogo.png" /></a></div>
+                    <div class="socialmedia-icons">
+                        <ul>
+                            <li><a href="#"><img src="images/sm-1.png" /></a></li>
+                            <li><a href="#"><img src="images/sm-2.png" /></a></li>
+                            <li><a href="#"><img src="images/sm-3.png" /></a></li>
+                            <li><a href="#"><img src="images/sm-4.png" /></a></li>
+                            <li><a href="#"><img src="images/sm-5.png" /></a></li>
+                            <li><a href="#"><img src="images/sm-6.png" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fright-colmn">
+                    <div class="colmn-1">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Experience</a></li>
+                            <li><a href="#">Exploit</a></li>
+                            <li><a href="#">Express</a></li>
+                        </ul>
+                    </div>
+                    <div class="colmn-1">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="colmn-1">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Legal</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </footer>
+        <div class="clr"></div>
+        <section id="copywright">
+            <div class="inner-sec">
+                © 2015 <a href="index.html">ariya</a> relax - enjoy. All Rights Reserved
+            </div>
+        </section>
+
+        <!--footerEND-->
+        <script>
+            (function ($) {
+                $('#carousel').roundabout({
+                    minScale: 0.1,
+                    childSelector: "li",
+                    autoplay: true,
+                    autoplayDuration: 2400,
+                    autoplayPauseOnHover: true
+                });
+            }(jQuery));
+        </script>
+
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,963 @@
+/* ----------------------------------
+   STYLING FOR PORTRAIT ORIENTATION
+------------------------------------- */
+
+
+/* ------ MAX-WIDTH:800px------ */
+
+
+@media (max-width:800px) and (orientation:portrait) { 
+
+body {
+  background: #321c53;
+}
+
+.land {
+  display: none;
+}
+
+.port {
+  display: block;
+}
+
+#page-wrapper {
+  width: 100%;
+}
+
+#wrapper {
+  width:100%;
+  height: 336px;
+  overflow: hidden;
+}
+
+#slider img {
+  width: 100%;
+}
+
+#continue {
+  position: relative;
+  height: 78px;
+  margin-top: -1px !important;
+  margin-bottom: 30px;
+  background: #6d6e71;
+}
+
+a.continue {
+  padding: 0.45em 0 0.45em 0;
+  font-size: 2.625em;
+  color: #ededed !important;
+  margin-right: 10px;
+}
+
+#continue .social-md {
+  margin-left: 10px;
+}
+
+.social-md {
+  padding: 18px 15px;
+  float: left;
+}
+
+.social-md li {
+  float: left;
+  margin: 2px;
+  border: 1px solid #1b91c6;
+  width: 2.25em;
+  height: 2.25em;
+}
+
+.social-md li a {
+  position: absolute;
+  font-size: 1.5em;
+  color: #ffffff;
+  padding: 8px 12px 4px;
+}
+
+.social-md .tw a {
+  padding: 6px 4px 6px 8px;
+}
+
+.social-md .gp a {
+  padding: 7px 0 0 9px;
+}
+
+.social-md .ig a {
+  padding: 6px 0 0 8px;
+}
+
+.ad-970p {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.ad-970p > img {
+  max-width: 100% !important;
+}
+
+.r-purple {
+  background: #321c53;
+  height: 145px;
+}
+
+.r-red {
+  background: #ff0000;
+  height: 77px;
+}
+
+.rex-red {
+  height: 210px;
+}
+
+.r-purple, .rex-purple, .r-red, .rex-red {
+  margin: 15px 0 0 0;
+}
+
+#slider li {
+  float: left;
+}
+
+.rect {
+  width: 145px;
+  height: 502px;
+  background: #321C53;
+}
+
+#search {
+  position: relative;
+  left: 0;
+  top: 4px;
+  margin: 0 15px;
+}
+
+.search {
+  width: 100%;
+  height: 42px;
+  background: url(../images/search.png) no-repeat 9px 9px;
+  padding-left: 36px;
+  border: 3px solid #321C53;
+  border-radius: 5px;
+  font-family: Dekar, Sans-serif;
+  font-size: 18px;
+}
+
+.navbar {
+  position: relative;
+  float: right;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  border: 0;
+}
+
+.wrap {
+  height: 880px;
+  margin: 0 auto;
+}
+
+#splash {
+  position: absolute;
+  top: 117px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#splash img {
+  width: 87%;
+}
+
+#naira-logo {
+  width: 180px !important;
+  top: 70px;
+}
+
+.line1 {
+  top: 24px;
+}
+
+.line2 {
+  top: 51px;
+}
+
+.line3 {
+  top: 570px;
+}
+
+.line4 {
+  top: 660px;
+}
+
+.abs-left {
+  float: left;
+  position: absolute;
+}
+
+.right {
+  float: right;
+}
+
+.vcenter {
+  position: relative;
+  top: 159px;
+}
+
+
+.center {
+  left: 158px;
+}
+
+.navbar > ul > li, .secondary > ul > li {
+  float: left;
+  padding: 18px 0 15px 0 ;
+}
+
+.navbar > ul > li > a, .secondary > ul > li > a {
+  padding: 0 9px 0 3px;
+}
+
+.secondary > ul > li > a:hover {
+  padding: 15px;
+  background: #212121;
+  color: #ffffff;
+}
+
+.drop {
+  position: absolute;
+  top: 48px;
+  width: 160px;
+  background: #212121;
+  z-index: 99;
+}
+
+.drop li {
+  margin: 0 18px;
+  border-bottom: 1px solid #333333;
+  padding: 5px 10px;
+}
+
+.drop li:last-child {
+  border-bottom: 0px;
+}
+
+.drop li a {
+  display: block;
+  padding: 12px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.drop li a:hover {
+  color: #ff0000;
+}
+
+.navbar ul li ul.drop, .secondary ul li ul.drop {
+  display: none;
+}
+
+.navbar ul li:hover ul.drop, .secondary ul li:hover ul.drop {
+  display: block;
+}
+
+.secondary {
+  float: right;
+  font-family: Dekar, sans-serif;
+}
+
+a:link, a:visited {
+  color: #000000;
+}
+
+a:hover, a:active {
+  color: #ff0000;
+}
+
+.social-login {
+  position: relative;
+  top: 6px;
+}
+
+.social-login li {
+  margin: 15px auto 0;
+  padding: 6px;
+}
+
+.social-login a {
+  color: #ffffff;
+}
+
+.social-login i {
+  padding: 6px 9px 3px 4px;
+  border-right: 1px solid rgba(255,255,255,0.45);
+}
+
+.social-login span {
+  padding: 6px;
+  padding-left: 12px;
+}
+
+.social-login .fb i {
+  padding: 6px 12px 3px 7px;
+}
+
+#content: {
+  width: 1200px;
+  height: 900px;
+}
+
+#content aside {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.trivia p, .wetin p {
+  text-align: justify;
+  padding: 30px;
+  line-height: 21px;
+}
+
+.vertical > .trivia {
+  height: 230px
+}
+
+.wetin {
+  background: #321c53;
+}
+
+.wetin h3 {
+  background: #ff0000;
+  padding: 9px 15px;
+  color: #ffffff;
+  font-size: 24px;
+  border-bottom: 2px solid white;
+}
+
+footer {
+  position: relative;
+  margin: 0;
+  height: 78px;
+  width: 100%;
+  bottom: -1px;
+  background: #6d6e71;
+}
+
+.vertical, .badge {
+  float: left;
+  width: 33.75%;
+  padding: 5px 0;
+}
+
+.badge img {
+  margin: 0 10px;
+}
+
+.banner {
+  width: 100%;
+  margin: 15px 0;
+  padding: 0;
+}  
+
+.banner .rules {
+  overflow-y: hidden;
+}
+
+.banner .rules li {
+  float: left;
+  margin-left: 27px;
+  padding: 6px 5px 0 0;
+}
+
+.banner .tape {
+  margin: -5px -10px 0 0;
+}
+
+.banner p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+
+.usp {
+  height: 120px;
+  padding: 5px 0 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.usp > p:first-letter {
+  float: left;
+  padding: 7px 5px 0 0;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 63px;
+  line-height: 36px
+}
+
+.usp > p {
+  float: right;
+  padding: 5px 20px 0;
+  width: 65%;
+  height: 120px;
+  overflow-y: scroll;
+}
+
+.banner > .trivia p {
+  padding: 10px 20px 0;
+  width: 65%;
+  overflow-y: hidden;
+}
+
+#slider-wrap {
+  margin-right: 108px;
+}
+
+#isliders {
+  width: 561px;
+  height: 450px;
+}
+
+#xtras-wrap {
+  width: 96.5%;
+  margin-right: 12px;
+}
+
+#form-wrap {
+  float: left;
+  width: 58%;
+}
+
+#reg-form {
+  width: 100%;
+  height: 195px;
+}
+
+#upload {
+  width: 60%;
+}
+
+.terms {
+  position: relative;
+  left: -11px;
+  text-align: center;
+}
+
+input[type=submit], input[type=reset]{
+  width: 72px;
+  padding-left: 6px;
+}
+
+.c-wrap {
+  margin-bottom: 15px;
+}
+
+#commentary {
+  top: 5px;
+  width: 100%;
+  height: 180px;
+}
+
+#comment {
+  position: relative;
+}
+
+.ad300 {
+  margin: 15px 0 0 0;
+}
+
+.adv600 {
+  width: 37%;
+}
+
+#album {
+  float: left;
+  width: 486px;
+  margin: 5px auto;
+}
+
+#album-wrap {
+  margin: 0 auto !important;
+  float: none;
+  width: 98%;
+}
+
+#carousel li {
+  margin: 0px -55px;
+}
+
+#carousel li img {
+  width: 35%;
+}
+
+#overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#pop {
+  cursor: pointer
+}
+
+#modal {
+    position:absolute;
+    background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    padding:8px;
+}
+
+#modal-content {
+  border-radius: 8px;
+  background: #321c53;
+  width: 270px;
+  height: 270px;
+  padding: 15px 5px;
+}
+
+#close {
+  position:absolute;
+  background:url(../images/x.png) 0 0 no-repeat;
+  width:24px;
+  height:27px;
+  display:block;
+  text-indent:-9999px;
+  top:-7px;
+  right:-7px;
+}
+
+#popup {
+  display: none;
+  width: 210px
+}
+
+#popup h3 {
+  color: #ffffff;
+  font-size: 21px;
+  padding: 15px;
+  text-align: center;
+  line-height: 24px;
+}
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+
+.r-red, .rex-red {
+  height: 96px;
+}
+
+.navbar {
+  width: 78%;
+}
+
+.navbar > ul > li {
+  padding: 15px 0;
+}
+
+.navbar > ul > li:last-child {
+  padding: 0 0 15px;
+}
+.wrap {
+  height: 780px;
+}
+
+.line3 {
+  top: 660px;
+}
+
+.line4 {
+  top: 755px;
+}
+
+.wetin {
+  background: #321c53;
+}
+
+.badge span {
+  font-size: 1.720rem;
+}
+
+#slider-wrap {
+  margin-right: 12px;
+}
+
+#xtras-wrap {
+  width: 96.75%;
+  margin-right: 10px;
+}
+
+#form-wrap {
+  width: 48.3%;
+}
+
+#reg-form {
+  height: 188px;
+}
+
+#email, #tag, .upload {
+  width: 90%;
+}
+
+.upload {
+  height: 40px;
+}
+
+#upload {
+  width: 81%;
+  margin: 8px 0;
+}
+
+.check ul li {
+  float: left;
+  margin-right: 12px;
+}
+
+.terms {
+  top: -20px;
+  left: 0;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.submit {
+  position: relative;
+  top: -14px;
+  right: -2px;
+}
+
+.ad300 {
+  width: 49.5%;
+}
+
+#album {
+  top: 70px;
+  float: none;
+  width: 486px;
+  margin: 5px auto;
+}
+
+.adv600 {
+  margin: 75px auto 12px;
+  width: 100%;
+}
+
+}
+
+
+@media (max-width:540px) and (orientation:portrait) { .welcome { text-align: center; line-height: 24px; }}
+
+@media (max-width:480px) and (orientation:portrait) {
+
+.navbar > ul > li > a {
+  padding: 0px 3px;
+}
+
+.wrap {
+  height: 700px;
+}
+
+#naira-logo {
+  top: 25px;
+  padding: 5px;
+}
+
+.line3 {
+  top: 570px;
+}
+
+.line4 {
+  top: 660px;
+}
+
+.banner.port {
+  display: none;
+}
+
+.vertical.land {
+  display: block;
+  width: 90%;
+  float: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.vertical img {
+  margin: 0;
+}
+
+.vertical > p {
+  position: relative;
+  margin: 15px 0;
+  padding: 0px 10px;
+  height: 125px;
+  line-height: 21px;
+  overflow-y: scroll;
+}
+
+.vertical > p:first-letter {
+  float: left;
+  padding: 7px 5px 2px 0;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 3.375rem;
+  line-height: 2rem;
+}
+
+.vertical > .trivia > p {
+  padding: 10px 1px 15px 15px;
+}
+
+#slider-wrap {
+  float: none;
+}
+
+#isliders {
+  margin-top: 15px;
+  width: 267px;
+  height: 444px;
+}
+
+#xtras-wrap {
+  width: 97.45%;
+  margin-right: 0.4375rem;
+}
+
+#caption {
+  margin: 15px 0 -16px;
+}
+
+#reg-form {
+  height: 171px;
+}
+
+#email, #tag, .upload {
+  width: 93.35%;
+}
+
+.check {
+  margin: 0;
+}
+
+.terms {
+  top: -12px;
+}
+
+.submit {
+  top: -9px;
+  right: 0;
+}
+
+input[type=reset], input[type=submit] {
+  height: 30px;
+  width: 63px;
+  font-size: 15px;
+}
+
+#form-wrap, .ad300 {
+  width: 100%;
+  float: none;
+  margin: 15px 0;
+}
+
+#album {
+  width: 95%;
+  margin: 5px auto;
+}
+}
+
+@media (max-width:420px) and (orientation:portrait) {
+
+.social-md {
+  margin: 0;
+  padding: 18px 2px 18px 8px;
+}
+
+a.continue {
+  padding: 1.2em 0.11em 0.45em 0;
+  font-size: 1.45em;
+  margin-right: 0.125rem;
+}
+
+#t-rect li {
+  width: 100%;
+}
+
+.navbar {
+  width: 87%;
+}
+
+#search {
+  margin-top: 15px;
+}
+
+.search {
+  font-size: 0.75rem;
+}
+
+.welcome {
+  font-size: 1em;
+  padding: 27px 9px 9px;
+}
+
+.wrap {
+  height: 570px;
+}
+
+.line2 {
+  font-size: 2.7rem;
+  top: 45px;
+}
+
+.line3 {
+  top: 492px;
+  font-size: 1.8rem;
+  width: 55.5%;
+}
+
+.line4 {
+  top: 561px;
+  font-size: 1.5rem;
+}
+
+#splash {
+  width: 90%;
+  top: 96px;
+}
+
+#naira-logo {
+  top: 25px;
+}
+
+.trivia p, .wetin p {
+  text-align: left;
+}
+
+.banner.port {
+  display: none;
+}
+
+.vertical.land {
+  display: block;
+  width: 90%;
+  float: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.vertical img {
+  margin: 0;
+}
+
+#slider-wrap {
+  right: 0;
+  top: -30px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#isliders {
+  width: 278px;
+  height: 444px;
+  margin-top: 15px;  
+}
+
+#xtras-wrap {
+  width: 98%;
+  margin-right: 3px;
+}
+
+#form-wrap, .ad300 {
+  float: none;
+  width: 99%;
+}
+
+#upload {
+  width: 60%;
+}
+
+#caption {
+  margin: 15px 0 -16px;
+}
+
+footer .social-md {
+  padding: 18px 66px;
+}
+}
+
+@media (max-width:321px) and (orientation:portrait) {
+
+#continue {
+  height: auto;
+}
+
+.lt321 {
+  float: left;
+  width: 100%;
+}
+
+#continue .social-md {
+  float: none;
+  width: 190px;
+  margin: 0 auto;
+}
+
+a.continue {
+  float: inherit;
+  width: 100%;
+  font-size: 1.625rem;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.ad-970p {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.r-purple, .rex-purple {
+  width: 100%;
+  height: 145px;
+  margin: 15px 0;
+}
+
+.r-red, .rex-red {
+  width: 100%;
+  height: 96px;
+  margin: 15px 0;
+}
+
+.welcome {
+  padding: 18px 15px 9px 0;
+}
+
+.navbar {
+  width: 105%;
+  margin-top: 3px;
+}
+
+.wrap {
+  height: 480px;
+}
+
+.line2 {
+  font-size: 2.46rem;
+}
+
+.line3 {
+  top: 412px;
+  font-size: 1.65rem;
+  width: 63%;
+}
+
+.line4 {
+  top: 470px;
+  font-size: 1.25rem;
+}
+
+}
+@media (min-width:410px) and (max-width:420px) and (orientation:portrait) { #isliders {  width: 307px; }}
+@media (max-width:460px) and (orientation:portrait) { .p50c { width: 100%; }}
+  

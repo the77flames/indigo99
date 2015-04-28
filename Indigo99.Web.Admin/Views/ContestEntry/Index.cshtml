@@ -1,0 +1,83 @@
+﻿@using Indigo99.DomainObjects
+@model IEnumerable<Movie>
+@{
+    ViewBag.Title = "Movie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#AddMovieButton').click(function () {
+
+            $('#AddMovieForm').submit();
+        });
+
+    });
+
+</script>
+<!-- Content -->
+<section id="content" class="container">
+    <div class="tile">
+        <h2 class="tile-title">All Movies</h2>
+        <div class="tile-config dropdown">
+            <a title="" class="tooltips tile-menu" href="" data-original-title="Options" data-toggle="dropdown"></a>
+            <ul class="dropdown-menu pull-right text-right">
+                <li><a href="#modalDefault" data-toggle="modal">Add New Movie</a></li>
+            </ul>
+        </div>
+
+        <div class="listview narrow sortable ui-sortable">
+            @if (Model == null || !Model.Any())
+{
+    <span style="padding-left: 40px;"> There are no movies in the database ! </span>
+}
+else
+{
+
+    foreach (var movie in Model)
+    {
+                    <div class="media p-l-5">
+                        <div class="pull-left">
+                            <img width="40" alt="" src='@movie.ThumbNailImagePath'>
+                        </div>
+                        <div class="media-body">
+                            <small class="text-muted">@movie.ReleaseDate</small><br>
+                            <a class="t-overflow" href="@Url.Action("Edit", "Movie", new {id = @movie.Id})">@movie.Name</a>
+
+                        </div>
+                    </div>
+                } 
+            }
+            <div class="media p-5 text-center l-100">
+                <a href="#"><small>VIEW ALL</small></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="block-area" id="modal">    
+    <!-- Modal Default -->
+    <div tabindex="-1" class="modal fade" id="modalDefault" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                @using(Html.BeginForm("Add", "Movie", FormMethod.Post, new { id = "AddMovieForm"}))
+                {
+                    <div class="modal-header">
+                        <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Add New Movie</h4>
+                    </div>
+                    <div class="modal-body">
+                        @{ Html.RenderPartial("AddMovie", new Movie()); }
+                    </div>
+                    <div class="modal-footer">
+                        <button id="AddMovieButton" class="btn btn-sm" type="button">Save changes</button>
+                        <button class="btn btn-sm" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                }
+             </div>
+        </div>
+    </div> 
+</div>
+
