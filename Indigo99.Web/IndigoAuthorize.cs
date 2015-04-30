@@ -27,8 +27,8 @@ namespace Indigo99.Web
                         new RouteValueDictionary(
                             new
                             {
-                                controller = "LogIn",
-                                action = "Index"
+                                controller = "Home",
+                                action = "PreloginContestIndex"
                             })
                         );
          

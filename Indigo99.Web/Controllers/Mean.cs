@@ -13,9 +13,9 @@ namespace Indigo99.Web.Controllers
 {
     public class MeanController : Controller
     {
-       
+
         [HttpGet]
-       // [OutputCache(Duration = 120)]
+        [IndigoAuthorize]
         public ActionResult Index()
         {            
             return View();

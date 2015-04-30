@@ -31,22 +31,19 @@ namespace Indigo99.Web.Controllers
         }
 
         [AllowAnonymous]
-        public ActionResult Register(string firstname, string lastname, string email, string phone,
-                        string gender, string dob, string accounttype, string password)
+        public ActionResult Register(string firstname, string lastname, string email, 
+                                    string month, string year, string day, string password)
         {
             var dateofbirth = new DateTime();
+            var dob = month + "/" + day + "/" + year;
             DateTime.TryParse(dob, out dateofbirth);
             var customer = new Customer
                 {
                     FirstName = firstname,
                     LastName = lastname,
                     Email = email,
-                    PhoneNumber = phone,
                     Password = password,
-                    Gender = gender,
-                    DOB = dateofbirth,
-                    AccountType = accounttype
-                    
+                    DOB = dateofbirth,                    
                 };
             try
             {
@@ -54,7 +51,7 @@ namespace Indigo99.Web.Controllers
                 _customerManagementService.Enroll(customer);
                 customer = _customerManagementService.GetCustomerByEmail(email);
                 _addressManagementService.AddNewAddress(new CustomerAddress { CustomerID = customer.Id  });
-                return RedirectToAction("Index", "LogIn");
+                return RedirectToAction("Home", "ContestIndex");
             }
             catch (Exception)
             {

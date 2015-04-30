@@ -29,8 +29,8 @@
             <div class="col-xs-6 col-md-5">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="past.html">Past Winners</a></li>
-                        <li><a href="happen.html">WetinHappen</a></li>
+                        <li><a href="/PastWinners">Past Winners</a></li>
+                        <li><a href="/Gist">WetinHappen</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-xs-4">&nbsp;</div>
                                 <div class="w120 col-xs-4">
-                                    <a href="#" class="pop">
+                                    <a href="/Ikebe">
                                         <img src="~/images/kim.jpg" alt="Ikebe Super" class="img-responsive">
                                         <div class="desc"><p>IKEBE SUPER CONTEST</p></div>
                                     </a>
@@ -55,14 +55,14 @@
                             <br>
                             <div class="row">
                                 <div class="w120 col-xs-4">
-                                    <a href="#" class="pop">
+                                    <a href="/Mean" >
                                         <img src="~/images/isa.jpg" alt="Mean Look" class="img-responsive">
                                         <div class="desc"><p>MEAN LOOK CONTEST</p></div>
                                     </a>
                                 </div>
                                 <div class="w120 col-xs-4"><img src="~/images/naira.png" id="naira-logo" alt="Naira" class="img-responsive"></div>
                                 <div class="w120 col-xs-4">
-                                    <a href="#" class="pop">
+                                    <a href="/Gele" >
                                         <img src="~/images/gele.jpg" alt="Gele Headtie" class="img-responsive">
                                         <div class="desc"><p>GELE CONTEST</p></div>
                                     </a>
@@ -73,14 +73,14 @@
                             <div class="row">
                                 <div class="w120 col-xs-1"></div>
                                 <div class="w120 col-xs-4">
-                                    <a href="#" class="pop">
+                                    <a href="/Hair" >
                                         <img src="~/images/hair.jpg" alt="Hairstyle" class="img-responsive">
                                         <div class="desc"><p>HAIR CONTEST</p></div>
                                     </a>
                                 </div>
                                 <div class="w120 col-xs-2"></div>
                                 <div class="w120 col-xs-4">
-                                    <a href="#" class="pop">
+                                    <a href="/MakeUp" >
                                         <img src="~/images/makeup.jpg" alt="Makeup" class="img-responsive">
                                         <div class="desc"><p>MAKEUP CONTEST</p></div>
                                     </a>
@@ -109,92 +109,7 @@
         </div>
         <div class="clear"></div>
         <!-- MODAL UNIT -->
-        <div class="overlay hidden"></div>
-        <div class="imodal hidden">
-            <a class='mclose' href='#'></a>
-            <h3> Log In or Sign Up to continue.. </h3>
-            <div class="sl-wrap">
-                <ul class="social-login">
-                    <li class="ik bttn1"><a href="#"><i class="fa fa-sign-in fa-lg"></i><span>Log In / Sign Up</span></a></li>
-                    <li class="fb bttn2"><a href="#"><i class="fa fa-facebook fa-lg"></i><span>Login with facebook</span></a></li>
-                </ul>
-            </div>
-            <div class="tabs">
-
-                <ul class="tab-btn">
-                    <li class="active"><a href="#tab1">Log In</a></li>
-                    <li><a href="#tab2">Sign Up</a></li>
-                </ul>
-                <div class="line"></div>
-                <div class="tab-content">
-                    <div id="tab1" class="tab active">
-                        <form action="#" id="reg">
-                            <input class="email" type="email" placeholder="Email Address" required="required" name="email"><br>
-                            <input class="password" type="password" placeholder="Password" required="required" name="pw"><br>
-                            <div class="check">
-                                <ul>
-                                    <li>
-                                        <div class="sign">
-                                            <input id="remember" type="checkbox" required="required" name="check" />
-                                            <label for="remember"></label>
-                                        </div>
-                                    </li>
-                                    <li><p class="cookie">Remember Me</p></li>
-                                </ul>
-                            </div>
-                            <div class="login">
-                                <ul>
-                                    <li><input type="submit" value="Log In"></li>
-                                    <li><input type="reset" value="Cancel"></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                    <div id="tab2" class="tab">
-                        <form action="#">
-                            <div class="fsname">
-                                <input class="fname" type="text" placeholder="First Name" required="required" name="fname">
-                                <input class="sname" type="text" placeholder="Surname" required="required" name="sname">
-                            </div>
-                            <div class="date">
-                                <input class="day" type="number" placeholder="DD" min="01" max="31" required="required" name="day">
-                                <input class="month" type="number" placeholder="MM" min="01" max="12" required="required" name="month">
-                                <input class="year" type="number" maxlength="4" placeholder="YYYY" min="1955" max="2000" required="required" name="year">
-                            </div>
-                            <input class="email" type="email" placeholder="Email Address" required="required" name="email"><br>
-                            <input class="password" type="password" placeholder="Enter Password" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pw" onchange="form.pw2.pattern = this.value;"><br>
-                            <input class="password" type="password" placeholder="Confirm Password" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pw2"><br>
-                            <div class="check">
-                                <ul>
-                                    <li>
-                                        <div class="sign">
-                                            <input id="sign" type="checkbox" required="required" name="check" />
-                                            <label for="sign"></label>
-                                        </div>
-                                    </li>
-                                    <li><p class="cookie">I have read and agree with IkebeSuper’s Terms and Conditions</p></li>
-                                </ul>
-                            </div>
-                            <div class="login">
-                                <ul>
-                                    <li><input type="submit" value="Register"></li>
-                                    <li><input type="reset" value="Cancel"></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- MODAL UNIT END -->
-        <footer>
-            <ul class="social-md">
-                <li class="fb"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="tw"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="gp"><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                <li class="ig"><a href="#"><span class="fa fa-instagram"></span></a></li>
-            </ul>
-        </footer>
+     
     </div>
 
     <script>
@@ -211,76 +126,6 @@
                 });
             });
         });
-    </script>
-    <script>
-        $(function () {
-            var $modal = $('div.imodal').omniWindow({
-                overlay: {
-                    selector: '.overlay',
-                    hideClass: 'hidden',
-                    animations: {
-                        show: function (subjects, internalCallback) {
-                            subjects.overlay.fadeIn(250, function () {
-                                internalCallback(subjects); // call internal callback AFTER jQuery animations will stop
-                            })
-                        },
-                        hide: function (subjects, internalCallback) {
-                            subjects.overlay.fadeOut(250, function () {
-                                internalCallback(subjects);
-                            })
-                        }
-                    }
-                },
-                modal: {
-                    hideClass: 'hidden'
-                }
-            });
-            $('div.imodal a.mclose').click(function (e) {
-                e.preventDefault();
-                $modal.trigger('hide');
-            });
-            $('a.pop').click(function (e) {
-                e.preventDefault();
-                $modal.trigger('show');
-            });
-        });
-    </script>
-    <script>
-
-        var modal = $('div.imodal');
-        var forms = $('div.tabs');
-        var heading = $('.imodal h3');
-
-        $('.bttn1').click(function (e) {
-            e.preventDefault();
-            $('.bttn1').css({ display: 'none' });
-            heading.animate({ fontSize: 18, marginBottom: 10 }, { duration: 300, queue: true });
-            modal.animate({ top: 24, width: 300, height: 600, paddingTop: 30 },
-               {
-                   duration: 300, queue: true, complete: function () {
-                       forms.css({ display: 'block' });
-                       $('.sl-wrap').css({ borderBottom: '1px dashed #ffffff' });
-                       $('.tab-content').css({ display: 'block' });
-                   }
-               });
-        });
-
-    </script>
-    <script>
-        jQuery(document).ready(function () {
-            jQuery('.tabs .tab-btn a').on('click', function (e) {
-                var currentAttrValue = jQuery(this).attr('href');
-
-                // Show/Hide Tabs
-                jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-
-                // Change/remove current tab to active
-                jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-
-                e.preventDefault();
-            });
-        });
-
     </script>
 </body>
 </html>

@@ -40,7 +40,7 @@ namespace Indigo99.Controllers
             if (_authenticationService.Authenticate(email, passWord))
             {
                 await LogInUser(email);
-                return RedirectToAction("Index", "Account");
+                return Json(true);
             }
 
             throw new UnauthorizedAccessException("Bad username or password");

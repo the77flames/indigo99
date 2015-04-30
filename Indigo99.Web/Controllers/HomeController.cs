@@ -21,6 +21,19 @@ namespace Indigo99.Web.Controllers
             return View();
         }
 
+        public ActionResult PreloginContestIndex()
+        {
+            if (System.Web.HttpContext.Current.Session["currentUser"] != null)
+                return RedirectToAction("ContestIndex");
+
+            return View();
+        }
+
+        [IndigoAuthorize]
+        public ActionResult ContestIndex()
+        {
+            return View();
+        }
         
       
     }

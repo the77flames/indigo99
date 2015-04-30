@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectConakry.Web.Ariya</RootNamespace>
-    <AssemblyName>ProjectConakry.Web.Ariya</AssemblyName>
+    <RootNamespace>Indigo99.Web</RootNamespace>
+    <AssemblyName>Indigo99.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -594,10 +594,8 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Shared\_LayoutPrelogIn.cshtml" />
     <Content Include="Views\Home\ContestIndex.cshtml" />
     <Content Include="Views\Ikebe\Index.cshtml" />
     <Content Include="Views\Gele\Index.cshtml" />
@@ -606,6 +604,7 @@
     <Content Include="Views\MakeUp\Index.cshtml" />
     <Content Include="Views\PastWinners\Index.cshtml" />
     <Content Include="Views\Gist\Index.cshtml" />
+    <Content Include="Views\Home\PreloginContestIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\api\" />

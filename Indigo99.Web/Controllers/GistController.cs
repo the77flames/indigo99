@@ -13,9 +13,8 @@ namespace Indigo99.Web.Controllers
 {
     public class GistController : Controller
     {
-       
+
         [HttpGet]
-       // [OutputCache(Duration = 120)]
         public ActionResult Index()
         {            
             return View();

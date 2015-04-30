@@ -15,7 +15,6 @@ namespace Indigo99.Web.Controllers
     {
        
         [HttpGet]
-       // [OutputCache(Duration = 120)]
         public ActionResult Index()
         {            
             return View();
