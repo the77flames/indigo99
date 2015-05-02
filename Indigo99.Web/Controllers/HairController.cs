@@ -11,7 +11,7 @@ using System.Web.Security;
 
 namespace Indigo99.Web.Controllers
 {
-    public class HairController : Controller
+    public class HairController : AuthenticatedBaseController
     {
 
         [HttpGet]

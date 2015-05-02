@@ -257,7 +257,7 @@
     <Compile Include="Controllers\GistController.cs" />
     <Compile Include="Controllers\PastWinnersController.cs" />
     <Compile Include="IndigoAuthorize.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AuthenticatedBaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
@@ -266,7 +266,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RESTFulAPIs\VotingRESTAPIController.cs" />
-    <Compile Include="RESTFulAPIs\RecommendationsServiceRESTAPIController.cs" />
+    <Compile Include="RESTFulAPIs\ContestRESTAPIController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\RequireConfig.js" />

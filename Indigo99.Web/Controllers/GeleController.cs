@@ -11,7 +11,7 @@ using System.Web.Security;
 
 namespace Indigo99.Web.Controllers
 {
-    public class GeleController : Controller
+    public class GeleController : AuthenticatedBaseController
     {
        
         [HttpGet]
