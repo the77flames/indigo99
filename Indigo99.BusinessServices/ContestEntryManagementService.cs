@@ -78,6 +78,13 @@ namespace Indigo99.BusinessServices
             var result = _contestEntryRepository.GetByContestantId(contestantId) ?? Enumerable.Empty<ContestEntry>();
             return result.OrderByDescending(n => n.ContestDate).ToList();
         }
+
+        public List<ContestEntry> GetAllWinners(int count)
+        {
+           var result = _contestEntryRepository.GetByWinningStatus(true, count) ?? Enumerable.Empty<ContestEntry>();
+            return result.OrderByDescending(n => n.ContestDate).ToList();
+        }
+        
     }
 }
 

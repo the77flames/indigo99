@@ -48,6 +48,17 @@ namespace Indigo99.Data
             return cursor.ToList();
         }
 
+        public List<ContestEntry> GetByWinningStatus(bool winningStatus, int count)
+        {
+            var query = Query<ContestEntry>.EQ(e => e.IsWinner, winningStatus);
+            var cursor = this.MongoConnectionManager.MongoCollection.FindAs<ContestEntry>(query).SetLimit(count);
+
+            if (!cursor.Any())
+                return null;
+
+            return cursor.ToList();
+        }
+
         public List<ContestEntry> GetByContestantId(string contestantId)
         {
             var query = Query<ContestEntry>.GTE(e => e.ContestantId, contestantId);

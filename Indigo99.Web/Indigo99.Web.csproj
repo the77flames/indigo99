@@ -266,6 +266,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RESTFulAPIs\CommentsRESTAPIController.cs" />
+    <Compile Include="RESTFulAPIs\PastWinnersRESTAPIController.cs" />
     <Compile Include="RESTFulAPIs\VotingRESTAPIController.cs" />
     <Compile Include="RESTFulAPIs\ContestRESTAPIController.cs" />
   </ItemGroup>

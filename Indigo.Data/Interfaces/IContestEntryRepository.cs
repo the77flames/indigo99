@@ -13,5 +13,6 @@ namespace Indigo99.Data
         List<ContestEntry> GetAllByDate(DateTime date);
         List<ContestEntry> GetByDateAndWinningStatus(DateTime date, bool winningStatus);
         List<ContestEntry> GetByContestantId(string contestantId);
+        List<ContestEntry> GetByWinningStatus(bool winningStatus, int count);
     }
 }

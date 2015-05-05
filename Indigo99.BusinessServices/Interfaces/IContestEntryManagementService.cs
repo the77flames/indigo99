@@ -18,6 +18,7 @@ namespace Indigo99.BusinessServices
         List<ContestEntry> GetByDateAndWinningStatus(DateTime date, bool winningStatus);
         List<ContestEntry> GetByContestantId(string contestantId);
         ContestEntry MostPopularItem(string fieldName);
+        List<ContestEntry> GetAllWinners(int count);
        
     }
 }
