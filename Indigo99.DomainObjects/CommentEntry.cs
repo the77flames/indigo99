@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Indigo99.DomainObjects
 {
-    public class ContestEntry : MongoEntity, IContestEntry
+    public class CommentEntry : MongoEntity
     {
-        public byte[] ImageBytes { get; set; }
-        public string ContestantId { get; set; }
+        public string CommenterId { get; set; }
         public bool IsWinner { get; set; }
-        public int TotalVotes { get; set; }
-        public bool IsDisqualified { get; set; }
+        public int TotalUpVotes { get; set; }
+        public int TotalDownVotes { get; set; }
         public int ContestType { get; set; }
+        public string CommentString { get; set; }
         public DateTime ContestDate { get; set; }
     }
 }

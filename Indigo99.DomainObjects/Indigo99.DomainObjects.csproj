@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminUser.cs" />
+    <Compile Include="CommentEntry.cs" />
     <Compile Include="Enums\ContestTypes.cs" />
     <Compile Include="ContestEntry.cs" />
     <Compile Include="Customer.cs" />

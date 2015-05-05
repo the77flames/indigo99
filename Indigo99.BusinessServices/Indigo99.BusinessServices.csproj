@@ -53,6 +53,8 @@
     <Compile Include="AddressManagementService.cs" />
     <Compile Include="AuthenticationService.cs" />
     <Compile Include="AdminUserManagermentService.cs" />
+    <Compile Include="CommentEntryManagementService.cs" />
+    <Compile Include="Interfaces\IContestEntryManagementService.cs" />
     <Compile Include="Interfaces\INewsManagementService .cs" />
     <Compile Include="NewsManagementService.cs" />
     <Compile Include="Interfaces\IRecommendationsService.cs" />
@@ -62,7 +64,7 @@
     <Compile Include="Interfaces\IAdminUserManagementService.cs" />
     <Compile Include="Interfaces\ICustomerManagementService.cs" />
     <Compile Include="Interfaces\IAuthenticationService.cs" />
-    <Compile Include="Interfaces\IContestEntryManagementService.cs" />
+    <Compile Include="Interfaces\ICommentEntryManagementService.cs" />
     <Compile Include="ContestEntryManagementService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

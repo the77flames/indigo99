@@ -13,7 +13,7 @@ namespace Indigo99.BusinessServices
         void Add(ContestEntry entity);
         void Update(ContestEntry entity);
         ContestEntry GetById(string id);
-        List<ContestEntry> GetAllByDateAndType(DateTime date, ContestTypes contestType);
+        List<ContestEntry> GetAllByDateAndType(DateTime date, int contestType);
         List<ContestEntry> GetAllByDate(DateTime date);
         List<ContestEntry> GetByDateAndWinningStatus(DateTime date, bool winningStatus);
         List<ContestEntry> GetByContestantId(string contestantId);

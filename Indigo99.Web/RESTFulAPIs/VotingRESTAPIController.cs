@@ -8,11 +8,14 @@ namespace Indigo99.Web.RESTFulAPIs
 {
     public class VotingRESTAPIController : ApiController
     {
-       private readonly ContestEntryManagementService _contestEntryMgmtService;
+       private readonly IContestEntryManagementService _contestEntryMgmtService;
+       private readonly ICommentEntryManagementService _commentEntryMgmtService;
 
-       public VotingRESTAPIController(ContestEntryManagementService contestEntryMgmtService)
+       public VotingRESTAPIController(IContestEntryManagementService contestEntryMgmtService,
+           ICommentEntryManagementService commentEntryMgmtService)
        {
            _contestEntryMgmtService = contestEntryMgmtService;
+           _commentEntryMgmtService = commentEntryMgmtService;
            
        }
 
@@ -22,6 +25,22 @@ namespace Indigo99.Web.RESTFulAPIs
             var contestEntry = _contestEntryMgmtService.GetById(id);
             contestEntry.TotalVotes += 1;
             _contestEntryMgmtService.Update(contestEntry);
+            return true;
+        }
+
+        public bool UpVoteComment(string id)
+        {
+            var commentEntry = _commentEntryMgmtService.GetById(id);
+            commentEntry.TotalUpVotes += 1;
+            _commentEntryMgmtService.Update(commentEntry);
+            return true;
+        }
+
+        public bool DownVoteComment(string id)
+        {
+            var commentEntry = _commentEntryMgmtService.GetById(id);
+            commentEntry.TotalDownVotes -= 1;
+            _commentEntryMgmtService.Update(commentEntry);
             return true;
         }
 

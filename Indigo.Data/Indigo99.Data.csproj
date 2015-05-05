@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="AddressRepository.cs" />
     <Compile Include="AdminUserRepository.cs" />
+    <Compile Include="CommentEntryRepository.cs" />
+    <Compile Include="Interfaces\ICommentEntryRepository.cs" />
     <Compile Include="Interfaces\INewsRepository.cs" />
     <Compile Include="NewsRepository.cs" />
     <Compile Include="CustomerRepository.cs" />

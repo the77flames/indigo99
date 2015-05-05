@@ -35,16 +35,17 @@ namespace Indigo99.Web.RESTFulAPIs
            file.InputStream.Read(newContestEntry.ImageBytes, 0, file.ContentLength);
            newContestEntry.ContestantId = customer.Id.ToString();
            newContestEntry.ContestDate = DateTime.Now;
-           newContestEntry.ContestType = null;
+           newContestEntry.ContestType = contestType;
            return Ok();
 
        }
 
-       public IEnumerable<ContestEntry> GetTodaysEntries()
+       public IEnumerable<ContestEntry> GetTodaysEntries(int contestType)
        {
-           var result = Enumerable.Empty<ContestEntry>();
+           var date = DateTime.Parse(DateTime.Now.ToShortDateString()).AddDays(-1);
+           var result = _contestEntryManagementService.GetAllByDateAndType(date, contestType);
 
-           return result;
+           return result ?? Enumerable.Empty<ContestEntry>();
 
        }
     }

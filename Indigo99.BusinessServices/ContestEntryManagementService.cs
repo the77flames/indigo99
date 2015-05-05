@@ -60,7 +60,7 @@ namespace Indigo99.BusinessServices
         }
 
 
-        public List<ContestEntry> GetAllByDateAndType(DateTime date, ContestTypes contestType)
+        public List<ContestEntry> GetAllByDateAndType(DateTime date, int contestType)
         {
             var result = _contestEntryRepository.GetAllByDateAndType(date, contestType) ?? Enumerable.Empty<ContestEntry>();
             return result.OrderByDescending(n => n.ContestDate).ToList();

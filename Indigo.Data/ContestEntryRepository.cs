@@ -22,7 +22,7 @@ namespace Indigo99.Data
             return cursor.ToList();
         }
 
-        public List<ContestEntry> GetAllByDateAndType(DateTime date, ContestTypes contestType)
+        public List<ContestEntry> GetAllByDateAndType(DateTime date, int contestType)
         {
             var query1 = Query<ContestEntry>.GTE(e => e.ContestDate, date);
             var query2 = Query<ContestEntry>.EQ(e => e.ContestType, contestType);
